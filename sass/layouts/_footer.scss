@@ -18,10 +18,10 @@
     color: var(--white-color);
   }
 }
+
 .address__wrap {
-  margin-bottom: 60px;
-  @include desktop {
-    margin-bottom: 0;
+  @media screen and (max-width: 1199px) {
+    margin-bottom: 60px;
   }
 }
 .address {
@@ -75,10 +75,9 @@
 }
 .join-wrap {
   display: inline-block;
-  margin-bottom: 60px;
-  @include desktop {
-    margin-bottom: 0;
-  }
+ @media screen and (max-width: 767px) {
+    margin-bottom: 60px;
+}
 }
 .join {
   display: flex;
