@@ -4,7 +4,10 @@
 .footer__section {
   padding-top: 60px;
   padding-bottom: 60px;
-  display: flex;
+  text-align: center;
+  @include desktop {
+    text-align: left;
+  }
 }
 
 .footer__logo {
@@ -15,12 +18,20 @@
     color: var(--white-color);
   }
 }
-
+.address__wrap {
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+  }
+}
 .address {
   list-style: none;
 }
 .address__item:not(:last-child) {
-  margin-bottom: 9px;
+  margin-bottom: 8px;
+  @include desktop {
+    margin-bottom: 9px;
+  }
 }
 
 .address__link {
@@ -37,11 +48,22 @@
     color: var(--white-color);
   }
 }
-
+.tablet.footer__wrap {
+  @include tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+  }
+  @include desktop {
+    gap: 93px;
+  }
+}
 .footer__wrap {
-  display: flex;
-  align-items: baseline;
-  justify-content: space-between;
+  @include desktop {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+  }
 }
 .footer__title {
   margin-bottom: 20px;
@@ -52,7 +74,11 @@
   color: var(--white-color);
 }
 .join-wrap {
-  display: block;
+  display: inline-block;
+  margin-bottom: 60px;
+  @include desktop {
+    margin-bottom: 0;
+  }
 }
 .join {
   display: flex;
@@ -79,18 +105,27 @@
 }
 
 .footer-form {
-  width: 570px;
+  @include desktop {
+    display: inline-block;
+    text-align: center;
+    width: 570px;
+  }
 }
 .footer-form__wrap {
-  display: flex;
+  display: block;
+  @include desktop {
+    display: flex;
+  }
 }
 
 .footer-form__input {
+  margin-bottom: 20px;
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
   padding-right: 16px;
-  min-width: 358px;
+  width: 100%;
+
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -102,6 +137,13 @@
   color: rgba(255, 255, 255, 0.6);
   outline: var(--accent-color);
   @include transitionSet(border-color);
+  @include tablet {
+    width: 450px;
+  }
+  @include desktop {
+    margin-bottom: 0;
+    max-width: 358px;
+  }
 
   &:hover,
   &:focus {
@@ -114,7 +156,7 @@
 }
 
 .footer-form__button {
-  margin-left: 12px;
+  margin: auto;
   min-width: 200px;
   height: 50px;
   padding: 10px 28px;
@@ -126,12 +168,16 @@
   font-weight: 700;
   font-size: 16px;
   line-height: 1.875;
+
   display: flex;
   align-items: center;
   justify-content: flex-end;
   letter-spacing: 0.06em;
   color: var(--white-color);
   @include transitionSet(background-color);
+  @include desktop {
+    margin-left: 12px;
+  }
 
   &:hover,
   &:focus {

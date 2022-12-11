@@ -1,6 +1,10 @@
 .work {
+  display: none;
   padding-top: 0;
   padding-bottom: 94px;
+  @include desktop {
+    display: block;
+  }
   &__title {
     margin-bottom: 50px;
     color: var(--primary-title-color);
