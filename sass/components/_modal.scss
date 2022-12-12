@@ -14,8 +14,8 @@
 .modal {
   position: relative;
   padding: 40px;
-  width: 528px;
-  min-height: 581px;
+  width: 450px;
+  min-height: 609px;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -25,6 +25,10 @@
   left: 50%;
   transform: translate(-50%, -50%) scaleY(1) scaleX(1);
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
+  @include desktop {
+    width: 528px;
+    min-height: 581px;
+  }
 }
 .backdrop.is-hidden .modal {
   transform: translate(-50%, -50%) scaleY(-0.5) scaleX(0);
@@ -121,7 +125,12 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  line-height: 1.71;
+  line-height: calc(14 / 12);
+  font-size: 12px;
+  @include desktop {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
 }
 
 .checkbox__label .checkbox__cover {
@@ -131,9 +140,12 @@
   border-radius: 2px;
   margin-right: 7px;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   fill: transparent;
+  @include desktop {
+    justify-content: center;
+  }
 }
 .checkbox__input:checked + .checkbox__label .checkbox__cover {
   background-color: var(--accent-color);
@@ -153,8 +165,11 @@
     height: 1px;
     background-color: var(--accent-color);
     position: absolute;
-    bottom: 5px;
+    bottom: 2px;
     left: 0;
+    @include desktop {
+      bottom: 5px;
+    }
   }
 }
 

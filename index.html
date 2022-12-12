@@ -47,6 +47,63 @@
             </svg> +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu is-hidden" data-menu >
+     <div class="container">
+       <div class="mobile-menu-top">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-navigation__list">
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link " href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="">Контакти</a>
+            </li>
+          </ul>
+       </div>
+  
+       <div class="mobile-menu-bottom">
+          <a class="mobile-contacts tel" href="tel:+380961111111">+38 096 111 11 11</a>
+    
+          <a class="mobile-contacts mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+    
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+       </div>
+     </div>
+
     </div>
   </header>
   <main>
@@ -137,7 +194,7 @@
               <source srcset="./images/igor-mobile.jpeg 1x, ./images/igor-mobile-2x.jpeg 2x" media="(max-width: 767px)">
               <img src="./images/igor-mobile.jpeg" alt="Ігор Дем'яненко" width="450" />
             </picture>
-           
+
             <div class="team__card">
               <h3 class="team__name">Ігор Дем'яненко</h3>
               <p class="team__description" lang="en">Product Designer</p>
@@ -216,12 +273,14 @@
             </div>
           </li>
           <li class="team__item">
-          <picture>
+            <picture>
               <source srcset="./images/mukola-desk.jpg 1x, ./images/mukola-desk-2x.jpeg 2x" media="(min-width: 1200px)">
-              <source srcset="./images/mukola-tablet.jpeg 1x, ./images/mukola-tablet-2x.jpeg 2x" media="(min-width: 768px)">
-              <source srcset="./images/mukola-mobile.jpeg 1x, ./images/mukola-mobile-2x.jpeg 2x" media="(max-width: 767px)">
+              <source srcset="./images/mukola-tablet.jpeg 1x, ./images/mukola-tablet-2x.jpeg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./images/mukola-mobile.jpeg 1x, ./images/mukola-mobile-2x.jpeg 2x"
+                media="(max-width: 767px)">
               <img src="./images/mukola-mobile.jpeg" alt="Микола Тарасов" width="450" />
-          </picture>
+            </picture>
             <div class="team__card">
               <h3 class="team__name">Микола Тарасов</h3>
               <p class="team__description" lang="en">Marketing</p>
@@ -259,9 +318,12 @@
           </li>
           <li class="team__item">
             <picture>
-              <source srcset="./images/muchailo-desk.jpg 1x, ./images/muchailo-desk-2x.jpeg 2x" media="(min-width: 1200px)">
-              <source srcset="./images/muchailo-tablet.jpeg 1x, ./images/muchailo-tablet-2x.jpeg 2x" media="(min-width: 768px)">
-              <source srcset="./images/muchailo-mobile.jpeg 1x, ./images/muchailo-mobile-2x.jpeg 2x" media="(max-width: 767px)">
+              <source srcset="./images/muchailo-desk.jpg 1x, ./images/muchailo-desk-2x.jpeg 2x"
+                media="(min-width: 1200px)">
+              <source srcset="./images/muchailo-tablet.jpeg 1x, ./images/muchailo-tablet-2x.jpeg 2x"
+                media="(min-width: 768px)">
+              <source srcset="./images/muchailo-mobile.jpeg 1x, ./images/muchailo-mobile-2x.jpeg 2x"
+                media="(max-width: 767px)">
               <img src="./images/muchailo-mobile.jpeg" alt="Михайло Єрмаков" width="450" />
             </picture>
             <div class="team__card">
@@ -465,6 +527,7 @@
     </div>
   </div>
   <script src="./js/modal.js"></script>
+  <script src="./js/menu.js"></script>
 </body>
 
 </html>
