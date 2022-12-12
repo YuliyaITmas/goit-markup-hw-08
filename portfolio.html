@@ -24,10 +24,10 @@
       <nav class="navigation">
         <ul class="navigation__list">
           <li>
-            <a class="navigation__link" href="./index.html">Студія</a>
+            <a class="navigation__link navigation__link--current " href="./index.html">Студія</a>
           </li>
           <li>
-            <a class="navigation__link navigation__link--current" href="./portfolio.html">Портфоліо</a>
+            <a class="navigation__link " href="./portfolio.html">Портфоліо</a>
           </li>
           <li>
             <a class="navigation__link" href="">Контакти</a>
@@ -47,6 +47,63 @@
             </svg> +38 096 111 11 11</a>
         </li>
       </ul>
+      <button type="button" class="menu-open" data-menu-open>
+        <svg width="40" height="40">
+          <use href="./images/icons.svg#icon-menu-btn"></use>
+        </svg>
+      </button>
+    </div>
+    <div class="mobile-menu is-hidden" data-menu>
+      <div class="container">
+        <div class="mobile-menu-top">
+          <button type="button" class="menu-close" data-menu-close>
+            <svg width="40" height="40">
+              <use href="./images/icons.svg#icon-menu-close"></use>
+            </svg>
+          </button>
+          <ul class="mobile-navigation__list">
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="./index.html">Студія</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link " href="./portfolio.html">Портфоліо</a>
+            </li>
+            <li class="mobile-navigation__item">
+              <a class="mobile-navigation__link" href="">Контакти</a>
+            </li>
+          </ul>
+        </div>
+  
+        <div class="mobile-menu-bottom">
+          <a class="mobile-contacts tel" href="tel:+380961111111">+38 096 111 11 11</a>
+  
+          <a class="mobile-contacts mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
+  
+          <ul class="mobile-social">
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Instagram
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Twitter
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                Facebook
+              </a>
+            </li>
+            <li class="mobile-social__item">
+              <a class="mobile-social__link" href="">
+                LinkedIn
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+  
     </div>
   </header>
   <main>
