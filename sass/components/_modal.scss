@@ -17,6 +17,7 @@
   width: 100%;
   height: 100%;
   max-height: 609px;
+  overflow: auto;
   background-color: var(--white-color);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
@@ -28,11 +29,11 @@
   transition: transform 600ms cubic-bezier(0.4, 0, 0.2, 1);
   @include mobile {
     width: 450px;
-    max-height: 609px;
+    height: 609px;
   }
   @include desktop {
     width: 528px;
-    max-height: 581px;
+    height: 581px;
   }
 }
 .backdrop.is-hidden .modal {
@@ -105,7 +106,7 @@
 }
 .modal__comment {
   width: 100%;
-  max-height: 120px;
+  height: 120px;
   resize: none;
   padding: 12px 16px;
   border: 1px solid rgba(33, 33, 33, 0.2);
@@ -140,7 +141,7 @@
   }
   @include mobile {
     line-height: calc(14 / 12);
-  font-size: 12px;
+    font-size: 12px;
     align-items: center;
     justify-content: center;
   }
@@ -174,7 +175,7 @@
   display: inline-block;
   color: var(--accent-color);
   text-decoration: none;
-  
+
   margin-left: 5px;
   &::after {
     display: block;
@@ -193,12 +194,11 @@
     }
   }
 }
-
 .modal__button {
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
-  bottom: 40px;
+  display: flex;
+  margin: auto;
+  margin-top: 30px;
+  justify-content: center;
   min-width: 200px;
   height: 50px;
   padding: 10px 52px;
@@ -217,6 +217,30 @@
     background-color: var(--active-button-color);
   }
 }
+
+// .modal__button {
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   bottom: 40px;
+//   min-width: 200px;
+//   height: 50px;
+//   padding: 10px 52px;
+//   background: var(--accent-color);
+//   border-radius: 4px;
+//   border: none;
+//   font-family: inherit;
+//   font-size: 16px;
+//   line-height: 1.88;
+//   letter-spacing: 0.06;
+//   color: var(--white-color);
+//   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+//   @include transitionSet(backgroun-color);
+//   &:hover,
+//   &:focus {
+//     background-color: var(--active-button-color);
+//   }
+// }
 
 .close-button {
   position: absolute;
