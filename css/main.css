@@ -1422,6 +1422,11 @@ ul {
   line-height: 1.2;
   font-size: 10px;
 }
+@media screen and (min-width: 340px) {
+  .checkbox__label {
+    font-size: 12px;
+  }
+}
 @media screen and (min-width: 480px) {
   .checkbox__label {
     line-height: 1.1666666667;

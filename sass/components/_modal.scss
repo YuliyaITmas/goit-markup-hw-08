@@ -131,6 +131,9 @@
   justify-content: space-evenly;
   line-height: calc(12 / 10);
   font-size: 10px;
+  @media screen and (min-width: 340px) {
+    font-size: 12px;
+  }
   @include mobile {
     line-height: calc(14 / 12);
   font-size: 12px;
